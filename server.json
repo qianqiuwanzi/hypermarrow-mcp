@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.qianqiuwanzi/hypermarrow-mcp",
   "description": "Local-first AI memory MCP server. Record, recall and consolidate memory on your own machine.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://hm.qianshi.cool/",
   "repository": {
     "url": "https://github.com/qianqiuwanzi/hypermarrow-mcp",
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "hypermarrow-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       }
