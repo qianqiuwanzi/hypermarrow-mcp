@@ -23,5 +23,8 @@ jobs:
         run: |
           cat server.json
 
+      - name: Login with OIDC
+        run: ./mcp-publisher login github-oidc
+
       - name: Publish to MCP Registry (OIDC)
         run: ./mcp-publisher publish
