@@ -1,0 +1,19 @@
+# Smithery configuration for hypermarrow-mcp
+# Local-first AI memory MCP server (stdio)
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      dataDir:
+        type: string
+        title: Data Directory
+        description: Optional directory where memory is persisted. Defaults to the OS user profile.
+        default: ""
+  commandFunction: |-
+    (config) => ({
+      "command": "node",
+      "args": ["index.js"],
+      "env": config.dataDir ? { "HYPERMARROW_DATA_DIR": config.dataDir } : {}
+    })
