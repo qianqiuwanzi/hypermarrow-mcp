@@ -1,6 +1,7 @@
 {
   "name": "hypermarrow-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.qianqiuwanzi/hypermarrow-mcp",
   "description": "Local-first AI memory MCP server. Record / recall / consolidate / file-anchor your long-term context without sending memory to the cloud.",
   "main": "index.js",
   "bin": {
