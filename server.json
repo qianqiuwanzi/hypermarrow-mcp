@@ -1,0 +1,23 @@
+{
+  "name": "hypermarrow-memory",
+  "display_name": "智商藏不住 · 本地 AI 记忆 MCP",
+  "description": "Local-first AI memory MCP server. Lets any MCP-compatible client read/write the user's persistent memory (record / recall / consolidation) that lives on the local machine. Privacy-first: nothing leaves the device except calls to the user's own model endpoint.",
+  "version": "0.1.0",
+  "author": "千视科技 (qianshi.cool)",
+  "homepage": "https://hm.qianshi.cool/",
+  "repository": "https://github.com/qianqiuwanzi/hypermarrow-mcp",
+  "license": "MIT",
+  "tags": ["memory", "ai", "rag", "productivity", "local-first", "privacy", "knowledge-management"],
+  "category": "Knowledge & Memory",
+  "install": {
+    "npx": "npx -y hypermarrow-mcp",
+    "docker": "ghcr.io/qianqiuwanzi/hypermarrow-mcp:0.1.0"
+  },
+  "tools": [
+    { "name": "record_context", "description": "Capture a piece of local context (what the user is working on / a decision made) without uploading." },
+    { "name": "recall_memory", "description": "Semantic recall of relevant memory given a query, returns ranked context." },
+    { "name": "consolidate", "description": "Trigger background merge of repeated facts and time-decay of stale memory." },
+    { "name": "file_anchor", "description": "Anchor an entity to a local file path so 'the spec we discussed' resolves to the real document." }
+  ],
+  "privacy": "All memory is stored under the user's local profile; the server only talks to the user's configured model endpoint. No telemetry, no cloud sync."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "hypermarrow-mcp",
+  "version": "0.1.0",
+  "description": "Local-first AI memory MCP server. Record / recall / consolidate / file-anchor your long-term context without sending memory to the cloud.",
+  "main": "index.js",
+  "bin": {
+    "hypermarrow-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mcp",
+    "memory",
+    "ai",
+    "rag",
+    "local-first",
+    "privacy",
+    "knowledge-management",
+    "model-context-protocol"
+  ],
+  "author": "千视科技 (qianshi.cool)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianqiuwanzi/hypermarrow-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qianqiuwanzi/hypermarrow-mcp/issues"
+  },
+  "homepage": "https://hm.qianshi.cool/",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
